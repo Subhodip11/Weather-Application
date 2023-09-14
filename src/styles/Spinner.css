@@ -1,0 +1,12 @@
+.spin{
+    margin: 1rem auto;
+    width: fit-content;
+    height: auto;
+    animation: rotator 1s infinite;
+}
+
+@keyframes rotator{
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,32 @@
+.bottom-nav {
+    margin: 0 10px;
+    color: rgb(32, 166, 255);
+    font-size: 1.2rem;
+    transition: 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    position: relative;
+}
+
+.bottom-nav:hover:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(32, 166, 255);
+    animation: expand 300ms linear normal;
+}
+
+.bottom-nav:active{
+    background-color: rgb(179, 179, 179);
+}
+
+@keyframes expand{
+    0%{
+        width:0%
+    }
+    100%{
+        width: 90%;
+    }
+}
