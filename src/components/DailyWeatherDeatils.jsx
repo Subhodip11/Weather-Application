@@ -4,7 +4,7 @@ import axios from "axios";
 import { filterEssentialFieldsAndFormat } from "../helper.js";
 import { Box } from "@mui/material";
 
-const tommorowIoAPIKey = "bdS6Y1qx67YgAAOKpDk0d2nqjBE6Oj4n";
+const tommorowIoAPIKey = process.env.REACT_APP_TOMMOROW_IO_API_KEY;
 
 const initialState = {
   isLoading: true,

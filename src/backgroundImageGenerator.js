@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const unsplashApikKey = "Tga1RqGS8B-rbKsrwAv5CrQMPt-zdfyDZ8DNMMMKSco";
+const unsplashApikKey = process.env.REACT_APP_UNSPLASH_API_KEY;
 
 async function generateImage(weatherData){
     const query = weatherData.weather[0].description;

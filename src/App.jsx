@@ -9,7 +9,7 @@ import HourlyDataChart from "./components/HourlyDataChart";
 import { Box } from "@mui/material";
 import Navigation from "./components/Navigation";
 
-const apiKey = "95a46330d145ac87bc7c3c50eb56a123";
+const apiKey = process.env.REACT_APP_API_KEY;
 
 const initialState = {
   isLoading: true,
